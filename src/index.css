@@ -27,6 +27,19 @@ body {
   padding: 0;
 }
 
+.navbar ul li {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 .todo-list ul {
   padding: 0 10px 10px 10px;
   list-style-type: none;
@@ -95,4 +108,44 @@ button {
   font-weight: 300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
+}
+
+img{
+  width: 25%;
+  border-radius: 50%;
+  margin-left: 38%;
+  display: block;
+}
+
+.bi-github, .bi-facebook, .bi-google{
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline-flex;
+  cursor: pointer;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 50%;
+}
+
+.icons{
+  width: 13%;
+  margin-top: 15px;
+  margin: 10px auto;
+}
+
+.author{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px){
+  .icons{
+    width: 23%;
+    margin-top: 5px
+  }
+  .bi-github, .bi-facebook, .bi-google{
+    font-size: 15px;
+    margin-left: 8px;
+  }
 }

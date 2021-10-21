@@ -1,15 +1,21 @@
+import About from "./components/About";
 import Navbar from "./components/Navbar";
-import ThemeToggle from "./components/ThemeToggle";
-import Todos from "./components/Todos";
 import ThemeContextProvider from "./contexts/ThemeContext";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+
 function App() {
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <Navbar />
-        <Todos />
-        <ThemeToggle />
-      </ThemeContextProvider>
+      <BrowserRouter>
+        <ThemeContextProvider>
+          <Navbar />
+          <Switch>
+            <Route path="/about"component={About}/>
+            <Route path="/"component={Home}/>
+          </Switch>
+        </ThemeContextProvider>
+      </BrowserRouter>
     </div>
   );
 }
