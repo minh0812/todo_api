@@ -7,18 +7,22 @@ import axios from "axios";
 
 export default function Todos() {
   const [todos, setTodos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios('https://mysterious-basin-95318.herokuapp.com/todo');
+      const result = await axios(
+        "https://mysterious-basin-95318.herokuapp.com/todo"
+      );
       setTodos(result.data.data);
     };
 
     fetchData();
+    setIsLoading(false);
   }, []);
 
   const addTodo = async (todo) => {
-    await axios.post('https://mysterious-basin-95318.herokuapp.com/todo', todo);
+    await axios.post("https://mysterious-basin-95318.herokuapp.com/todo", todo);
     setTodos([todo, ...todos]);
   };
 
@@ -33,11 +37,17 @@ export default function Todos() {
   };
 
   const deleteTodo = async (id) => {
-    await axios.delete(`https://mysterious-basin-95318.herokuapp.com/todo/${id}`);
+    await axios.delete(
+      `https://mysterious-basin-95318.herokuapp.com/todo/${id}`
+    );
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
-  return (
+  return isLoading ? (
+    <div className="loader">
+      <p className="loader__text">Loading...</p>
+    </div>
+  ) : (
     <div className="todo-list">
       <TodoForm addTodo={addTodo} />
       <ul>
