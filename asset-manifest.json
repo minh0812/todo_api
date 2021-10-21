@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/todo_api/static/css/main.0bd1cdfa.chunk.css",
-    "main.js": "/todo_api/static/js/main.651eff91.chunk.js",
-    "main.js.map": "/todo_api/static/js/main.651eff91.chunk.js.map",
+    "main.css": "/todo_api/static/css/main.25816cb8.chunk.css",
+    "main.js": "/todo_api/static/js/main.f3f4081c.chunk.js",
+    "main.js.map": "/todo_api/static/js/main.f3f4081c.chunk.js.map",
     "runtime-main.js": "/todo_api/static/js/runtime-main.9b2fdecd.js",
     "runtime-main.js.map": "/todo_api/static/js/runtime-main.9b2fdecd.js.map",
     "static/css/2.6f8cb6bd.chunk.css": "/todo_api/static/css/2.6f8cb6bd.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.f7c91f7a.chunk.js.map": "/todo_api/static/js/3.f7c91f7a.chunk.js.map",
     "index.html": "/todo_api/index.html",
     "static/css/2.6f8cb6bd.chunk.css.map": "/todo_api/static/css/2.6f8cb6bd.chunk.css.map",
-    "static/css/main.0bd1cdfa.chunk.css.map": "/todo_api/static/css/main.0bd1cdfa.chunk.css.map",
+    "static/css/main.25816cb8.chunk.css.map": "/todo_api/static/css/main.25816cb8.chunk.css.map",
     "static/js/2.4b48401b.chunk.js.LICENSE.txt": "/todo_api/static/js/2.4b48401b.chunk.js.LICENSE.txt",
     "static/media/bootstrap-icons.css": "/todo_api/static/media/bootstrap-icons.5747cea3.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.9b2fdecd.js",
     "static/css/2.6f8cb6bd.chunk.css",
     "static/js/2.4b48401b.chunk.js",
-    "static/css/main.0bd1cdfa.chunk.css",
-    "static/js/main.651eff91.chunk.js"
+    "static/css/main.25816cb8.chunk.css",
+    "static/js/main.f3f4081c.chunk.js"
   ]
 }
