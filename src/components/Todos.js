@@ -15,10 +15,10 @@ export default function Todos() {
         "https://mysterious-basin-95318.herokuapp.com/todo"
       );
       setTodos(result.data.data);
+      setIsLoading(false);
     };
 
     fetchData();
-    setIsLoading(false);
   }, []);
 
   const addTodo = async (todo) => {
